@@ -23,7 +23,31 @@ def weatherDetail():
     print("Rainfall:"+str(response["days"][0]["precip"]))
     print("Condition:"+str(response["days"][1]["conditions"]))
     print("Description:"+str(response["days"][1]["description"]))
+    print(" ")
+    print(" ")
+
+#Crypto function resulting Bitcoin and Ethereum current price in USD
+def trackCrypto():
+
+    URL = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD"
+
+    #Response in JSON
+    response = requests.get(URL).json()
+    priceBit = response["BTC"]["USD"]
+    priceEth = response["ETH"]["USD"]
+    time = datetime.now().strftime("%H:%M:%S")
+
+    #Print Data
+    print(" ")
+    print(" ")
+    print("--------------- Crypto Report ---------------")
+    print("Bitcoin:" +str(priceBit)+ " USD")
+    print("Ethereum:" +str(priceEth)+ " USD")
+    print("Time:" +str(time))
+    print(" ")
+    print(" ")
 
 
 #Call the function
+trackCrypto()
 weatherDetail()
