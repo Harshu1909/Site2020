@@ -18,16 +18,4 @@ Use Postman extenstion to review JSON Formated Data
 python codeChallenge.py
 
 # Output
-
----------------- Crypto Report ----------------
-Bitcoin:31741.85 USD
-Ethereum:1934.2 USD
-Time:00:09:29
-
---------------- Weather Report ---------------
-Location:Halifax
-Date/Time:2022-06-01
-Tempreture:9.7C
-Rainfall:0.0
-Condition:Partially Cloudy
-Description:Partly cloudy throughout the day.
+ Output.png
